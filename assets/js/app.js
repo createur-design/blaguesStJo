@@ -9,6 +9,7 @@ btn.addEventListener("click", () => {
     .then((result) => result.json())
     .then((data) => {
       //   console.log(data);
-      blague.innerHTML = `<p>${data.result.question}</p><p>${data.result.answer}</p>`;
+      blague.innerHTML = `<p class="bulle">${data.result.question}</p><br><p class="bulle">${data.result.answer}</p>`;
+      btn.innerHTML = "une autre <span>😆</span>";
     });
 });
